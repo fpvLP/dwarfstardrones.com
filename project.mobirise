@@ -6,8 +6,8 @@
       "name": "colorm",
       "title": "ColorM",
       "styling": {
-        "primaryColor": "#f39c12",
-        "buttonsColor": "#000000",
+        "primaryColor": "#3d3d3d",
+        "buttonsColor": "#e74c3c",
         "secondaryColor": "#9b59b6",
         "successColor": "#2ecc71",
         "infoColor": "#3498db",
@@ -24,8 +24,10 @@
     "favicon": "@PROJECT_PATH@/assets/images/logo-fpvlp-black-128x128.png",
     "noImageResize": "",
     "versionFirst": "3.12.1",
-    "uniqCompNum": 2,
-    "versionPublish": "3.12.1"
+    "uniqCompNum": 5,
+    "versionPublish": "3.12.1",
+    "path": "@PROJECT_PATH@",
+    "screenshot": "screenshot.png"
   },
   "pages": {
     "index.html": {
@@ -33,49 +35,135 @@
         "main": true,
         "title": "Dwarfstardrones' FLP",
         "meta_descr": "Powered & created by fpvlandingpages.com",
-        "header_custom": "<link rel=\"stylesheet\" type=\"text/css\" href=\"http://www.fpvlandingpages.com/assets/css/libs/fpvLandingPages.css\">",
-        "footer_custom": "\t<a href=\"http://fpvlandingpages.com\" class=\"logo\" target=\"_blank\">\n\t <img class=\"logo\" src=\"http://www.fpvlandingpages.com/assets/images/logo-white.svg\" alt=\"\"> \n\t</a> ",
+        "header_custom": "<link rel=\"stylesheet\" type=\"text/css\" href=\"http://www.fpvlandingpages.com/assets/css/libs/fpvLandingPages2.css\">",
+        "footer_custom": "\t<a href=\"http://fpvlandingpages.com\" class=\"logo\" target=\"_blank\">\n\t <img class=\"logo\" src=\"http://www.fpvlandingpages.com/assets/images/logo-white.svg\" alt=\"\"> \n\t</a>",
         "html_before": ""
       },
       "components": [
         {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<div id=\"image2-k\" custom-code=\"true\" class=\"mbr-after-navbar\"><section class=\"mbr-section mbr-section__container image2 mbr-after-navbar\" style=\"background-image: url(assets/images/background.jpg); padding-top: 120px; padding-bottom: 80px;\">\n    <div class=\"mbr-overlay\" style=\"opacity: 0.6; background-color: rgb(0, 0, 0);\"></div>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-xs-12\">\n                <figure class=\"mbr-figure\">\n                  <img src=\"http://www.fpvlandingpages.com/assets/images/instagram-2000x714.png\" alt=\"Instagram\" style=\"height:10vh; width:auto;\">\n                  <div id=\"instafeed\"></div>\n\n{JS_CODE_0}\n{JS_CODE_1}</figure></div></div></div></section></div>",
+          "_customCSS": "",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [
+            "<script src=\"http://www.fpvlandingpages.com/assets/js/libs/fpvLandingPages.js\"></script>",
+            "<script type=\"text/javascript\">\n  var userFeed = new Instafeed({\n    get: 'user',\n    userId: '2761281888',\n    clientId: '\tc5df01f5bf89427f9bbcc8ee849e9a21',\n    accessToken: '2761281888.1677ed0.b750461743114b54b642476a82775d91',\n    resolution: 'standard_resolution',\n    template: '<a href=\"{{link}}\" target=\"_blank\" id=\"{{id}}\"><img src=\"{{image}}\" /></a>',\n    sortBy: 'most-recent',\n    limit: 12,\n    links: true\n  });\n  userFeed.run();\n</script>"
+          ],
+          "_anchor": "custom-html-3"
+        },
+        {
+          "_styles": {
+            ".hide-buttons .nav-btn": {
+              "display": "none !important"
+            },
+            ".navbar-caption": {
+              "color": "#ffffff"
+            },
+            ".navbar-toggler": {
+              "color": "#ffffff"
+            },
+            ".close-icon::before, .close-icon::after": {
+              "background-color": "#ffffff"
+            },
+            ".link, .dropdown-item": {
+              "color": "#ffffff",
+              "googleLink": "https://fonts.googleapis.com/css?family=Montserrat:400,700",
+              "font-family": "'Montserrat', sans-serif"
+            },
+            ".link": {
+              "font-size": "0.7rem"
+            },
+            ".dropdown-item, .nav-dropdown-sm .link": {
+              "font-size": "0.758rem"
+            },
+            ".link:hover, .link:focus": {
+              "color": "@primaryColor"
+            },
+            ".dropdown-item:hover::before, .dropdown-item:focus::before": {
+              "background": "@primaryColor"
+            },
+            ".dropdown-item:hover, .dropdown-item:focus": {
+              "color": "#ffffff"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-menu": {
+              "background": "#242424"
+            },
+            ".nav-dropdown-sm .link:focus, .nav-dropdown-sm .link:hover, .nav-dropdown-sm .dropdown-item:focus, .nav-dropdown-sm .dropdown-item:hover": {
+              "background": "#353535!important"
+            },
+            ".navbar, .nav-dropdown-sm, .nav-dropdown-sm .link[aria-expanded=\"true\"], .nav-dropdown-sm .dropdown-menu": {
+              "background": "#3d3d3d"
+            },
+            ".bg-color.transparent .link": {
+              "color": "#ffffff",
+              "transition": "none"
+            },
+            ".bg-color.transparent.opened .link": {
+              "transition": "color .2s ease-in-out"
+            },
+            ".bg-color.transparent.opened .link:hover, .bg-color.transparent.opened .link:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-item[aria-expanded=\"true\"]": {
+              "color": "#3d3d3d!important"
+            }
+          },
           "alias": "colorm/components",
           "_tags": [
             "Theme"
           ],
-          "_name": "header11",
-          "_anchor": "header11-0",
+          "_name": "menu",
+          "_anchor": "menu-2",
           "_params": {
-            "animText1": "GREAT!",
-            "animText2": "the BEST!",
-            "animText3": "AWESOMEEE!!!",
-            "typeSpeed": 60,
-            "parallax": false,
-            "bgImageRadio": true,
-            "bgImage": "@PROJECT_PATH@/assets/images/dsc00621-2000x1124.jpg",
-            "bgColor": "#2e2e2e",
-            "bgColorRadio": false,
-            "bgVideo": {
-              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
+            "bgColor": "#3d3d3d",
+            "fontSize": "0.7",
+            "fontName": {
+              "name": "Montserrat",
+              "url": "https://fonts.googleapis.com/css?family=Montserrat:400,700",
+              "css": "'Montserrat', sans-serif"
             },
-            "bgVideoRadio": false,
-            "overlay": true,
-            "overlayOpacity": "0.6",
-            "overlayColor": "#000",
-            "showTitle": true,
-            "showText": false,
-            "showButtons": false,
-            "showArrow": false
+            "fontColor": "#ffffff",
+            "fontHoverColor": "@primaryColor",
+            "transparent": false,
+            "sticky": true,
+            "logo": true,
+            "showBrand": true,
+            "collapsed": true,
+            "hideButtons": true
           },
-          "title": "FPV LANDING PAGES &nbsp;<br>is",
-          "text": "Full-screen intro with \"typed\" text effect. Enter in any string, and watch it type at the speed you have set, backspace what it is typed, and begin a new string. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel sunt, neque voluptatibus excepturi laboriosam possimus adipisci quidem dolores omnis, nemo dolore eligendi blanditiis voluptatem in, doloribus hic aperiam maiores fugit.",
-          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://mobirise.com\">GET FREE TRIAL</a>",
-          "arrowDown": "file:///Users/msi-mac/Library/Application%20Support/Mobirise.com/Mobirise/projectData/arrowDown_5.png"
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/logo-e7b068bc-b98b-44a8-96cf-9332b1c89fbd-94x128.png",
+              "height": 128,
+              "alt": "fpvLandingPages.com",
+              "link": "index.html",
+              "title": "",
+              "linkInNewWindow": false
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-menu",
+              "link": "https://mobirise.com",
+              "size": 0
+            }
+          },
+          "brand": "<a class=\"navbar-caption\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">SteezCeres</a>",
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://www.youtube.com/channel/UCJY4pxP0zUhPVsMteHkrL4g\" target=\"_blank\"><span class=\"fa fa-youtube-play mbr-iconfont mbr-iconfont-btn\"></span></a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://www.spreesy.com/DwarfStarDrones\" target=\"_blank\"><span class=\"mdi-maps-local-grocery-store mbr-iconfont mbr-iconfont-btn\"></span></a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://www.spreesy.com/DwarfStarDrones\" target=\"_blank\"></a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
         },
         {
           "_styles": {
             ".mbr-section-text": {
               "color": "#fff"
+            },
+            "P": {
+              "color": "#ffffff",
+              "font-size": "16px"
             }
           },
           "alias": "colorm/components",
@@ -83,20 +171,20 @@
             "Theme"
           ],
           "_name": "footer2",
-          "_anchor": "footer2-1",
+          "_anchor": "footer2-4",
           "_params": {
             "paddingTop": "1",
             "paddingBottom": "1",
             "bgImageRadio": false,
             "parallax": true,
-            "bgImage": "file:///Users/msi-mac/Library/Application%20Support/Mobirise.com/Mobirise/projectData/jumbotron_1.jpg",
+            "bgImage": "file:///Users/msi-mac/Library/Application%20Support/Mobirise.com/Mobirise/projectData/jumbotron_2.jpg",
             "bgColor": "#c0392b",
             "bgColorRadio": true,
             "overlay": true,
             "overlayOpacity": 0.8,
             "overlayColor": "#444444"
           },
-          "text": "Copyright (c) 2017 <a href=\"http://fpvlandingpages.com\" target=\"_blank\">FPV Landing Pages</a>."
+          "text": "Copyright (c) 2017 <a href=\"http://fpvlandingpages.com\" class=\"text-warning\">FPV Landing Pages</a>."
         }
       ]
     }
