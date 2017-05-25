@@ -63,10 +63,7 @@
               "display": "none !important"
             },
             ".navbar-caption": {
-              "color": "#ffffff",
-              "font-family": "'Raleway', sans-serif",
-              "googleLink": "https://fonts.googleapis.com/css?family=Raleway:400,300,700",
-              "font-size": "20px"
+              "color": "#ffffff"
             },
             ".navbar-toggler": {
               "color": "#ffffff"
@@ -80,10 +77,10 @@
               "font-family": "'Montserrat', sans-serif"
             },
             ".link": {
-              "font-size": "0.95rem"
+              "font-size": "0.7rem"
             },
             ".dropdown-item, .nav-dropdown-sm .link": {
-              "font-size": "1.029rem"
+              "font-size": "0.758rem"
             },
             ".link:hover, .link:focus": {
               "color": "@primaryColor"
@@ -115,9 +112,6 @@
             },
             ".link[aria-expanded=\"true\"], .dropdown-item[aria-expanded=\"true\"]": {
               "color": "#3d3d3d!important"
-            },
-            ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
-              "color": "@primaryColor"
             }
           },
           "alias": "colorm/components",
@@ -128,7 +122,7 @@
           "_anchor": "menu-2",
           "_params": {
             "bgColor": "#3d3d3d",
-            "fontSize": "0.95",
+            "fontSize": "0.7",
             "fontName": {
               "name": "Montserrat",
               "url": "https://fonts.googleapis.com/css?family=Montserrat:400,700",
@@ -159,7 +153,7 @@
               "size": 0
             }
           },
-          "brand": "<a class=\"navbar-caption\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Dwarf Star Drones</a>",
+          "brand": "<a class=\"navbar-caption\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">SteezCeres</a>",
           "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://www.youtube.com/channel/UCJY4pxP0zUhPVsMteHkrL4g\" target=\"_blank\"><span class=\"fa fa-youtube-play mbr-iconfont mbr-iconfont-btn\"></span></a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://www.spreesy.com/DwarfStarDrones\" target=\"_blank\"><span class=\"mdi-maps-local-grocery-store mbr-iconfont mbr-iconfont-btn\"></span></a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://www.spreesy.com/DwarfStarDrones\" target=\"_blank\"></a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
         },
         {
